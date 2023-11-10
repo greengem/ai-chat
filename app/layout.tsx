@@ -19,9 +19,12 @@ export default function RootLayout({
     <html lang="en" className='dark'>
       <body className={inter.className}>
         <Providers>
-          <header></header>
-          <nav></nav>
-          <main>{children}</main>
+          <header><nav></nav></header>
+          <main className='container mx-auto max-w-[600px] relative h-screen bg-default-200'>
+            <div>
+              {children}
+            </div>
+          </main>
           <footer></footer>
         </Providers>
       </body>
