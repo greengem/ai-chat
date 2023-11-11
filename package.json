@@ -13,6 +13,7 @@
     "@nextui-org/react": "^2.2.9",
     "@prisma/client": "^5.5.2",
     "@tabler/icons-react": "^2.40.0",
+    "@vercel/postgres": "^0.5.1",
     "date-fns": "^2.30.0",
     "framer-motion": "^10.16.4",
     "next": "14.0.2",
