@@ -1,11 +1,10 @@
-import Link from "next/link";
+
+import SidebarToggle from "./Sidebar/SidebarToggle";
 
 export default function ChatNavigation() {
     return (
-        <header className="p-5 bg-default-100">
-            <nav>
-                <Link href="/">Back</Link>
-            </nav>
+        <header className="p-5 border-b-1">
+            <SidebarToggle />
         </header>
     )
 }

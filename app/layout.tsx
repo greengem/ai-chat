@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import {Providers} from "./providers";
 import { Inter } from 'next/font/google'
 import './globals.css'
+import AppSidebar from '@/app/chat/_components/Sidebar/AppSidebar';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,11 +20,9 @@ export default function RootLayout({
     <html lang="en" className='dark'>
       <body className={inter.className}>
         <Providers>
-          <header><nav></nav></header>
-          <main className='container mx-auto max-w-[600px] relative h-screen bg-default-200'>
-            <div>
-              {children}
-            </div>
+          <main className='flex h-screen'>
+            <AppSidebar />
+            <section className='flex-grow bg-default-200'>{children}</section>
           </main>
           <footer></footer>
         </Providers>
