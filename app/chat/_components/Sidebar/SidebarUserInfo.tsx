@@ -9,6 +9,7 @@ export default function SidebarUserInfo() {
     return (
         <div className="absolute bottom-0 left-0 right-0 p-3">
             <User 
+                className="whitespace-nowrap"
                 name={session?.user?.name ?? "Unknown User"}
                 avatarProps={{
                     src: userImage

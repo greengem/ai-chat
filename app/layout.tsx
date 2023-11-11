@@ -22,7 +22,7 @@ export default function RootLayout({
         <Providers>
           <main className='flex h-screen'>
             <AppSidebar />
-            <section className='flex-grow bg-default-200'>{children}</section>
+            <section className='flex-grow bg-default-200 h-screen'>{children}</section>
           </main>
           <footer></footer>
         </Providers>

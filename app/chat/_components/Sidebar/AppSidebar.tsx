@@ -9,7 +9,7 @@ export default function AppSidebar() {
 
     return (
         <>
-            <aside className={`w-[260px] bg-default-100 h-full flex-none ${isSidebarVisible ? 'block' : 'hidden'}`}>
+            <aside className={`transform transition-all duration-200 ease-in-out ${isSidebarVisible ? 'w-64' : 'w-0'}  bg-default-100 h-full flex-none overflow-hidden`}>
                 <SidebarBranding />
                 <HistoryList />
                 <SidebarUserInfo />
